@@ -1,0 +1,170 @@
+/*ini settingan awal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 238, 0);
+  background-image: linear-gradient(to bottom right, #faffdf, #fef9b8);
+  font-family: sans-serif;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*untuk atur navbar nya*/
+.navbar {
+  background-color: black;
+  background-image: linear-gradient(to bottom right, #f2e313, #fff453);
+  position: fixed;
+  display: inline-flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+span{
+    color: orange;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: #000000;
+  background-color: #fff5b0;
+}
+
+/* =============================================== Card Game =================================================================== */
+
+.card {
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 10rem 34rem;
+  max-width: 28rem;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* judul & subtitle */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* input */
+.input-section {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.input-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.input-group input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+.input-group button {
+  padding: 0.5rem 1.25rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.input-group button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* feedback */
+.feedback {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.hidden {
+  display: none;
+}
+
+/* attempts */
+.attempts {
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+.attempts span {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* previous guesses */
+.guess-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* game over */
+#resetBtn {
+  padding: 0.75rem 2rem;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#resetBtn:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
