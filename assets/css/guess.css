@@ -5,22 +5,33 @@
   box-sizing: border-box;
 }
 
+/* untuk custom font */
+h1,h2,h3,h4,h5,p{
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*ini untuk ngescroll nya smooth dan tidak kaku*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; 
+}
+
+/*ini untuk atur body seperti ukuran, warna, jenis font, background tampilan */
 body {
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 238, 0);
+  background-color: black;
   background-image: linear-gradient(to bottom right, #faffdf, #fef9b8);
   font-family: sans-serif;
   line-height: 1.6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 
 /*untuk atur navbar nya*/
 .navbar {
   background-color: black;
   background-image: linear-gradient(to bottom right, #f2e313, #fff453);
+  color: white;
   position: fixed;
   display: inline-flex;
   justify-content: space-between;
@@ -61,110 +72,41 @@ span{
   background-color: #fff5b0;
 }
 
-/* =============================================== Card Game =================================================================== */
-
-.card {
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 10rem 34rem;
-  max-width: 28rem;
-  width: 100%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-/* judul & subtitle */
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 1.5rem;
-}
-.subtitle {
-  color: #6b7280;
-  margin-bottom: 1.5rem;
-}
-
-/* input */
-.input-section {
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-.input-section label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-.input-group {
+/* ini atur main. padding top biar ga ketutup navbar. diplay buat ngatur posisi content */
+main {
+  padding-top: 72px;
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
 }
-.input-group input {
-  flex: 1;
-  padding: 0.5rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  outline: none;
+
+/* Number Guessing Game Styling */
+#guess-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
 }
-.input-group input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px #3b82f6;
-}
-.input-group button {
-  padding: 0.5rem 1.25rem;
-  background: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
+#submit-btn, #restart-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 10px;
   cursor: pointer;
-  transition: 0.2s;
-}
-.input-group button:hover {
-  background: #2563eb;
-  transform: scale(1.05);
 }
 
-/* feedback */
-.feedback {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-}
-.hidden {
-  display: none;
-}
-
-/* attempts */
-.attempts {
-  margin-bottom: 1.5rem;
-  color: #374151;
-}
-.attempts span {
-  font-weight: bold;
-  color: #2563eb;
-}
-
-/* previous guesses */
-.guess-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-/* game over */
-#resetBtn {
-  padding: 0.75rem 2rem;
-  background: #10b981;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: 0.2s;
+  border: none;
+  border-radius: 8px;
+  background: #ff9800;
+  color: #fff;
+  transition: background 0.3s;
+  text-decoration: none;
 }
-#resetBtn:hover {
-  background: #059669;
-  transform: scale(1.05);
+
+.btn:hover {
+  background: #a88100;
 }

@@ -1,59 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Number Guessing Game</title>
-    <link rel="stylesheet" href="../assets/css/guess.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header id="header">
-      <nav class="navbar">
-        <h1><span>Rev</span>Fun</h1>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game - RevoFun</title>
+  <link rel="stylesheet" href="../assets/css/guess.css">
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar" >
+      <h1><span>Rev</span>Fun</h1>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#games">Games</a></li>
+          </ul>
+    </nav>
+  </header>
 
-    <div class="card">
-      <h1 class="title">🎯 Number Guessing Game</h1>
-
-      <p class="subtitle">
-        I'm thinking of a number between 1 and 100. Can you guess it?
-      </p>
-
-      <div id="gameContainer">
-        <div class="input-section">
-          <label for="guessInput">Enter your guess:</label>
-          <div class="input-group">
-            <input id="guessInput" min="1" max="100" placeholder="1-100" />
-            <button id="submitBtn">Guess!</button>
-          </div>
-        </div>
-
-        <div id="feedback" class="feedback hidden"></div>
-
-        <div class="attempts">
-          <p>Attempts remaining: <span id="attemptsLeft">10</span></p>
-        </div>
-
-        <div id="previousGuesses" class="hidden">
-          <p>Your previous guesses:</p>
-          <div id="guessList" class="guess-list"></div>
-        </div>
-      </div>
-
-      <div id="gameOverContainer" class="hidden">
-        <div id="gameOverMessage"></div>
-        <button id="resetBtn">🎮 Play Again</button>
-      </div>
+  <main class="game-container">
+    <h1>Number Guessing Game</h1>
+    <p>Tebak angka antara 1 sampai 100. Kamu punya 5 kesempatan!</p>
+    <div id="game-area">
+      <input type="number" id="guess-input" placeholder="Masukkan tebakanmu" />
+      <button id="submit-btn">Tebak</button>
+      <button id="restart-btn">Mulai Ulang</button>
+      
+      <p id="feedback"></p>
+      <p>Sisa Percobaan: <span id="attempts">5</span></p>
     </div>
+    <br>
+    <a href="../index.html" class="btn"> Kembali ke Home</a>
+  </main>
 
-    <script src="../js/guess.js"></script>
-  </body>
+  <script src="../js/guess.js"></script>
+</body>
 </html>
