@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors | RevoFun</title>
+  <link rel="stylesheet" href="../assets/css/rps.css">
+</head>
+<body>
+  <header id="header">
+        <nav class="navbar" >
+        <h1><span>Rev</span>Fun</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+            </ul>
+    </nav>
+    </header>
+
+  <section class="game-page">
+    <h1>Rock Paper Scissors</h1>
+    <p>Pilih salah satu:</p>
+
+    <div class="choices">
+      <button class="choose" onclick="play('rock')">✊ Rock</button>
+      <button class="choose" onclick="play('paper')">✋ Paper</button>
+      <button class="choose" onclick="play('scissors')">✌️ Scissors</button>
+    </div>
+
+    <div class="results">
+      <div class="result-text">
+        <p id="player-choice">🧑🏻: -</p>
+        <p> V.S.</p>
+        <p id="computer-choice">🤖: -</p>
+      </div>
+      
+      <h2 id="result">Hasil: -</h2>
+    </div>
+
+    <div class="scoreboard">
+      <p>Skor Kamu: <span id="player-score">0</span></p>
+      <p>Skor Komputer: <span id="computer-score">0</span></p>
+    </div>
+
+    <a href="../index.html" class="btn">Back to Home</a>
+  </section>
+
+  <script src="../js/rps.js"></script>
+</body>
+</html>

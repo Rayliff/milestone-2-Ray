@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clicker Game - RevoFun</title>
+  <link rel="stylesheet" href="../assets/css/clicker.css">
+</head>
+<body>
+  <header id="header">
+        <nav class="navbar" >
+        <h1><span>Rev</span>Fun</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+            </ul>
+    </nav>
+    </header>
+
+  <main class="game-container">
+    <div id="game-area">
+      <h1>Clicker Game</h1>
+      <p>Klik tombol sebanyak mungkin dalam 10 detik!</p>
+
+      <button id="click-btn" disabled>Klik Aku!</button>
+
+      <p>Skor: <span id="score">0</span></p>
+      <p>Sisa Waktu: <span id="time">10</span> detik</p>
+      <p id="result"></p>
+    </div>
+
+    <button id="start-btn">Mulai Game</button>
+
+    <br>
+
+    <a href="../index.html" class="btn">Kembali ke Home</a>
+  </main>
+
+  <script src="../js/clicker.js"></script>
+</body>
+</html>
