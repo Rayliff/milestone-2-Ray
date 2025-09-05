@@ -3,7 +3,7 @@
 
 ## [View Website](https://revou-fsse-jun25.github.io/milestone-1-Rayliff/)
 
-# Raihan Aliff Portfolio
+# Milestone 2 
 
 ## Overview
 
